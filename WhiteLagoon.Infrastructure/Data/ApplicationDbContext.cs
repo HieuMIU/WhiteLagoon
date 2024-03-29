@@ -17,6 +17,8 @@ namespace WhiteLagoon.Infrastructure.Data
 
         public DbSet<Villa> Villas { get; set; }
 
+        public DbSet<VillaNumber> VillaNumbers { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //base.OnModelCreating(modelBuilder);
@@ -57,6 +59,42 @@ namespace WhiteLagoon.Infrastructure.Data
                     ImageUrl = "https://example.com/image3.jpg",
                     Created_Date = DateTime.Now,
                     Updated_Date = DateTime.Now
+                });
+            modelBuilder.Entity<VillaNumber>().HasData(
+                new VillaNumber()
+                {
+                    VillaId = 1,
+                    Villa_Number = 101
+                },
+                new VillaNumber()
+                {
+                    VillaId = 1,
+                    Villa_Number = 102
+                },
+                new VillaNumber()
+                {
+                    VillaId = 1,
+                    Villa_Number = 201
+                },
+                new VillaNumber()
+                {
+                    VillaId = 2,
+                    Villa_Number = 111
+                },
+                new VillaNumber()
+                {
+                    VillaId = 2,
+                    Villa_Number = 112
+                },
+                new VillaNumber()
+                {
+                    VillaId = 3,
+                    Villa_Number = 301
+                },
+                new VillaNumber()
+                {
+                    VillaId = 3,
+                    Villa_Number = 302
                 });
         }
     }
