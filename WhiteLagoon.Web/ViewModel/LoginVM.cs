@@ -13,7 +13,7 @@ namespace WhiteLagoon.Web.ViewModel
 
         public bool RememberMe { get; set; }
 
-        public string? RedirectUrl { get; set; }
+        public string? ReturnUrl { get; set; }
 
 
     }
