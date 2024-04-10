@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 using WhiteLagoon.Application.Common.Interface;
 using WhiteLagoon.Application.Common.Interfaces;
 using WhiteLagoon.Domain.Entities;
@@ -31,6 +32,8 @@ builder.Services.Configure<IdentityOptions>(options =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
+
+StripeConfiguration.ApiKey = app.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

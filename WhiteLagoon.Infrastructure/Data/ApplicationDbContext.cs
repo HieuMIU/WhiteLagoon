@@ -22,6 +22,8 @@ namespace WhiteLagoon.Infrastructure.Data
 
         public DbSet<Amenity> Amenities { get; set; }
 
+        public DbSet<Booking> Bookings { get; set; }
+
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
