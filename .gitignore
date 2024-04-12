@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /WhiteLagoon.Web/wwwroot/images/VillaImage
+/WhiteLagoon.Web/appsettings.json
