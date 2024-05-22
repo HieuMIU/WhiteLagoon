@@ -1,6 +1,6 @@
-﻿namespace WhiteLagoon.Web.ViewModel
+﻿namespace WhiteLagoon.Application.Common.DTOs
 {
-    public class PieChartVM
+    public class PieChartDto
     {
         public decimal[] Series { get; set; }
 
