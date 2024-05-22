@@ -1,6 +1,6 @@
-﻿namespace WhiteLagoon.Web.ViewModel
+﻿namespace WhiteLagoon.Application.Common.DTOs
 {
-    public class RadialBarChartVM
+    public class RadialBarChartDto
     {
         public decimal TotalCount { get; set; }
 

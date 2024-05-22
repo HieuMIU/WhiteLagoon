@@ -1,6 +1,6 @@
-﻿namespace WhiteLagoon.Web.ViewModel
+﻿namespace WhiteLagoon.Application.Common.DTOs
 {
-    public class LineChartVM
+    public class LineChartDto
     {
         public List<ChartData> Series { get; set; }
 
